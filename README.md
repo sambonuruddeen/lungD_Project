@@ -9,6 +9,23 @@ The primary dataset is the Lung Image Database Consor-tium image collection (LID
 ## download trained model
 The trained model can be downloaded from [download here](https://drive.google.com/file/d/10F7U-8ZjRWAHvCJKZEtR4XnQkI9tyyY-/view?usp=sharing)
 
+
+* train loss, train accuracy and precision
+
+<p align="center">
+  <img src="https://github.com/makama-md/lungD_Project/blob/main/plots/training%20loss.png" width="350" title="hover text">
+  <img src="https://github.com/makama-md/lungD_Project/blob/main/plots/training%20accuracy.png" width="350" alt="accessibility text">
+  <img src="https://github.com/makama-md/lungD_Project/blob/main/plots/precision.png" width="350" alt="accessibility text">
+</p>
+
+
+
 ## Result
-1、Nodule Detection
+* Nodule Segmentation
+
+![](classfy_loss.PNG)
+![](classfy_accu.PNG)
+
+
+
 
