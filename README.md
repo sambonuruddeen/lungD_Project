@@ -21,11 +21,9 @@ The trained model can be downloaded from [download here](https://drive.google.co
 
 
 ## Result
-* Nodule Segmentation
+* Nodule Segmentation 
 
-![](classfy_loss.PNG)
-![](classfy_accu.PNG)
-
+![](https://github.com/makama-md/lungD_Project/blob/main/result/segmentated%20result.png)
 
 
 
