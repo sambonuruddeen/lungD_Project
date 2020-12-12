@@ -6,10 +6,7 @@ The primary dataset is the Lung Image Database Consor-tium image collection (LID
 
 ## The model architecture
 We plan to use the pretext part of the state-of-the-art SimCLR model in order to get a better visual representation of our data, and then parse it into the U-Net model for the downstream task of segmentation/classification of lung nodules from CT scans.
-<p align="center">
-  <img src="https://github.com/makama-md/lungD_Project/blob/main/plots/model.png" width="700" title="hover text">
-</p>
-
+![](https://github.com/makama-md/lungD_Project/blob/main/plots/uu.png)
 
 ## download trained model
 The trained model can be downloaded from [download here](https://drive.google.com/file/d/10F7U-8ZjRWAHvCJKZEtR4XnQkI9tyyY-/view?usp=sharing)
