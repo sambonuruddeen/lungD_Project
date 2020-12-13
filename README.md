@@ -9,7 +9,7 @@ We used the state-of-the-art segmentation model architecture, UNET. We used some
 ![](https://github.com/makama-md/lungD_Project/blob/main/plots/uu.png)
 
 ## Training
-In order to train the model, you should first download the already preprocessed data from [download here](https://drive.google.com/file/d/1Wn7RqGkiq3lanlRCKlLU7U_mcGZUdwly/view?usp=sharing). and put it a folder called 'data'. Then you can call the dataset.py and data_aug.py files to create training, validation and test data before calling the train.py file. You can then make prediction on the test data by calling the predict.py file.
+In order to train the model, you should first download the already preprocessed data from [download here](https://drive.google.com/file/d/1Wn7RqGkiq3lanlRCKlLU7U_mcGZUdwly/view?usp=sharing). and put it a folder called 'data'. Then you can call the dataset.py and data_aug.py files to create training, validation and test data and applying data augmentation before calling the train.py file to train the model. You can then make prediction on the test data by calling the predict.py file.
 
 ## download trained model
 The trained model can be downloaded from [download here](https://drive.google.com/file/d/10F7U-8ZjRWAHvCJKZEtR4XnQkI9tyyY-/view?usp=sharing)
