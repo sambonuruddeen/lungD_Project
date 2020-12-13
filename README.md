@@ -5,8 +5,11 @@ Lung nodules  are potential  manifestations of  lung cancer, and their  early de
 The primary dataset is the Lung Image Database Consor-tium image collection (LIDC-IDRI) [LIDC dataset](https://wiki.cancerimagingarchive.net) consists of diagnos-tic and lung cancer screening thoracic computed tomogra-phy (CT) scans with marked-up annotated lesions. We've preprocessed this data and stored them as a pickle file, which you can [download here](https://drive.google.com/file/d/1Wn7RqGkiq3lanlRCKlLU7U_mcGZUdwly/view?usp=sharing). After downloading the files you should place them in a folder called 'data'. After that, you can train the UNet on the LIDC dataset using the provided in train.py file.
 
 ## The model architecture
-We plan to use the pretext part of the state-of-the-art SimCLR model in order to get a better visual representation of our data, and then parse it into the U-Net model for the downstream task of segmentation/classification of lung nodules from CT scans.Data Preprocessing and Data Augmentation constitute two most important steps in the Image preprocessing.
+We used the state-of-the-art segmentation model architecture, UNET. We used some of data augmentation strategy used in the state-of-the-art SimCLR model in order to get a better visual representation of our data, before parsing it into the U-Net model for the downstream task of segmentation/classification of lung nodules from CT scans.Data Preprocessing and Data Augmentation constitute two most important steps in the Image preprocessing.
 ![](https://github.com/makama-md/lungD_Project/blob/main/plots/uu.png)
+
+## Training
+In order to train the model, you should first download the already preprocessed data from [download here](https://drive.google.com/file/d/1Wn7RqGkiq3lanlRCKlLU7U_mcGZUdwly/view?usp=sharing). and put it a folder called 'data'. Then you can call the dataset.py and data_aug.py files to create training, validation and test data before calling the train.py file. You can then make prediction on the test data by calling the predict.py file.
 
 ## download trained model
 The trained model can be downloaded from [download here](https://drive.google.com/file/d/10F7U-8ZjRWAHvCJKZEtR4XnQkI9tyyY-/view?usp=sharing)
@@ -19,10 +22,8 @@ The trained model can be downloaded from [download here](https://drive.google.co
   <img src="https://github.com/makama-md/lungD_Project/blob/main/plots/precision.png" width="350" alt="accessibility text">
 </p>
 
-
-
 ## Result
-* Nodule Segmentation 
+* Nodule diagnosis samples 
 
 ![](https://github.com/makama-md/lungD_Project/blob/main/result/segmentated%20result.png)
 
