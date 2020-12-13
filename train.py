@@ -6,7 +6,7 @@ import keras
 import keras.backend as K
 import tensorflow as tf
 from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint, ReduceLROnPlateau, CSVLogger, TensorBoard
-from dataa import load_data, tf_dataset
+from data import load_data, tf_dataset
 from model import build_model
 
 

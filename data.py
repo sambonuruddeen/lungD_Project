@@ -9,11 +9,6 @@ def load_data(path):
     images = sorted(glob(os.path.join(path, "images/*")))
     masks = sorted(glob(os.path.join(path, "masks/*")))
 
-    
-
-    # total_size = len(images)
-    # valid_size = int(split * total_size)
-    # test_size = int(split * total_size)
 
     valid_size = len(images[9031:12063])
     test_size = len(images[12063:-1])

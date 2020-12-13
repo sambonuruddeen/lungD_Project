@@ -1,12 +1,15 @@
-
 import os
 import numpy as np
 import cv2
 import tensorflow as tf
 from tensorflow.keras.utils import CustomObjectScope
 from tqdm import tqdm
-from dataa import load_data, tf_dataset
+from data import load_data, tf_dataset
 from train import f1_score
+
+
+
+
 
 def read_image(path):
     x = cv2.imread(path, cv2.IMREAD_GRAYSCALE)
@@ -63,3 +66,4 @@ if __name__ == "__main__":
         ]
         image = np.concatenate(all_images, axis=1)
         cv2.imwrite(f"results/{i}.png", image)
+        

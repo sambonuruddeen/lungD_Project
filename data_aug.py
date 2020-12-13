@@ -8,7 +8,7 @@ from tqdm import tqdm
 from glob import glob
 from sklearn.model_selection import train_test_split
 # from utils import create_dir
-from dataa import load_data
+from data import load_data
 
 from albumentations import (
     HorizontalFlip,
@@ -45,11 +45,7 @@ def augment_data(images, masks, save_path, augment=True):
             x3 = augmented['image']
             y3 = augmented['mask']
 
-            # aug = RandomScale(p=1.0, scale_limit=(0.5, 2.0))
-            # augmented = aug(image=x, mask=y)
-            # x4 = augmented['image']
-            # y4 = augmented['mask']
-
+            
             images = [x, x1, x2, x3]
             masks  = [y, y1, y2, y3]
 
@@ -77,19 +73,6 @@ def main():
     np.random.seed(42)
     path = 'new/'
     (train_x, train_y), (valid_x, valid_y), (test_x, test_y) = load_data(path)
-
-    print("Train: ", len(train_x))
-    print("Valid: ", len(valid_x))
-    print("Test: ", len(test_x))
-
-
-    # create_dir("../new_data/train/image/")
-    # create_dir("../new_data/train/mask/")
-    # create_dir("../new_data/valid/image/")
-    # create_dir("../new_data/valid/mask/")
-    # create_dir("../new_data/test/image/")
-    # create_dir("../new_data/test/mask/")
-
 
     augment_data(train_x, train_y, "../new/train/", augment=True)
     augment_data(valid_x, valid_y, "../new/valid/", augment=False)

@@ -12,9 +12,9 @@ total = 15096
 
 Real_val = 1
 
-TRAIN_PER = 0.6
-VAL_PER = 0.2
-TEST_PER = 0.2
+TRAIN_PER = 0.8
+VAL_PER = 0.1
+TEST_PER = 0.1
 
 
 train_dir = 'new/train/'
