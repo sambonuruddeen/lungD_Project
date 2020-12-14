@@ -14,7 +14,7 @@ In order to train the model, you should first download the already preprocessed 
 ### Download the Pre-trained Model
 You can as well make inference on the test data by downloading the pretrained model from [download here](https://drive.google.com/file/d/10F7U-8ZjRWAHvCJKZEtR4XnQkI9tyyY-/view?usp=sharing)
 
-* train loss, train accuracy and precision
+### Training loss, Training accuracy and Precision of the Model
 
 <p align="center">
   <img src="https://github.com/makama-md/lungD_Project/blob/main/plots/training%20loss.png" width="350" title="hover text">
