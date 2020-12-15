@@ -23,7 +23,9 @@ You can as well make inference on the test data by downloading the pretrained mo
 </p>
 
 ## Result
-* Nodule diagnosis samples 
+<img src="https://github.com/makama-md/lungD_Project/blob/main/plots/model_performance.png" width="550" alt="accessibility text">
+
+* Samples of Nodules detected by the model
 
 ![](https://github.com/makama-md/lungD_Project/blob/main/result/segmentated%20result.png)
 
